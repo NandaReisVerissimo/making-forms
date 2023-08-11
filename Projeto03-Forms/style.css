@@ -1,0 +1,286 @@
+body{
+  background: #a19d9d;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 436px;
+
+  position: absolute; /** esse campo faz com que ele fique por
+  cima de tudo na página**/
+  top: 0;
+  left: 0;
+  z-index: -1; /**é habilitado no position absolute. Colocando
+  -1 ele fica atrás das coisas**/
+  background: #535971;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  width: 417px;
+
+  margin-top: 132px;
+}
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 48px;
+  color: #FFF;
+}
+
+header p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #FFF;
+}
+
+form {
+  background: #FFFFFF;
+  margin-top: 58px;
+  border-radius: 20px 20px 0px 0px;
+  min-height: 300px;
+
+  padding: 64px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  color: #535971;
+  font-family: Staatliches;
+  font-size: 24px;
+  line-height: 34px;
+
+  width: 100%;
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+}
+
+.input-wrapper-name {
+  color: #4E4958;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 24px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+
+  width: 315px;
+ }
+
+.surname {
+  display: flex;
+  flex-direction: column;
+
+  width: 315px;
+ }
+
+ #name {
+  height: 56px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+  background: var(--shapes-02, #FAFAFC);
+  
+  padding: 0 14px;
+
+  color: #4E4958;
+  font-family: Poppins;
+  font-size: 14px;
+ }
+
+ #surname {
+  height: 56px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+  background: var(--shapes-02, #FAFAFC);
+
+  padding: 0 14px;
+
+  color: #4E4958;
+  font-family: Poppins;
+  font-size: 14px;
+ }
+
+ .input-wrapper {
+  color: #4E4958;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 19px;
+ }
+
+ .input-wrapper span {
+  color: #75737a;;
+  font-family: Poppins;
+  font-size: 12px;
+  line-height: 20px;
+
+  margin-left: 9px;
+}
+
+.input-wrapper input {
+  height: 56px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+  background: var(--shapes-02, #FAFAFC);
+
+  padding: 0 14px;
+  width: 622px;
+
+  color: #4E4958;
+  font-family: Poppins;
+  font-size: 14px;
+}
+
+ h1 {
+  color: #535971;
+  font-family: Staatliches;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+ }
+
+ .input-wrapper-date {
+  color: #4E4958;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 24px;
+
+  display: flex;
+  flex-direction: row;
+ 
+  width: 300px;
+  
+}
+
+.input-wrapper-date span {
+  color: #75737a;;
+  font-family: Poppins;
+  font-size: 12px;
+  line-height: 20px;
+
+  margin-left: 9px;
+}
+.firstdate {
+  display: flex;
+  flex-direction: column;
+
+ 
+ }
+
+.from {
+  display: flex;
+  flex-direction: column;
+ 
+ }
+
+ .until {
+  display: flex;
+  flex-direction: column;
+
+ }
+
+ #firstdate {
+  height: 56px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+  background: var(--shapes-02, #FAFAFC);
+  
+  padding: 0 14px;
+  width: 260px;
+  margin-right: 32px;
+
+  color: #4E4958;
+  font-family: Poppins;
+  font-size: 14px;
+ }
+
+ #from {
+  height: 56px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+  background: var(--shapes-02, #FAFAFC);
+
+  padding: 0 14px;
+  width: 122px;
+  margin-right: 10px;
+
+  color: #4E4958;
+  font-family: Poppins;
+  font-size: 14px;
+ }
+
+ #until {
+  height: 56px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+  background: var(--shapes-02, #FAFAFC);
+
+  padding: 0 14px;
+  width: 122px;
+
+  color: #4E4958;
+  font-family: Poppins;
+  font-size: 14px;
+ }
+
+footer {
+  background: #535971;
+ 
+  border-radius: 0px 0px 20px 20px;
+  
+  display: flex;
+  flex-direction: column;
+
+  padding: 52px 71px;
+  
+}
+
+footer input {
+  color: #FFF;
+  font-family: Staatliches;
+  font-size: 20px;
+  line-height: 26px;
+
+  height: 56px;
+
+  border-radius: 20px;
+  border: none;
+  background: #FF5374;
+}
+
+footer input:hover {
+  background: #be3a55;
+}
+
+input:invalid {
+  border: 2px solid rgb(68, 0, 255);
+}
